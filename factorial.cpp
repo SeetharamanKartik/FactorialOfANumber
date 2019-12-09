@@ -14,8 +14,14 @@ int num;
 cout<<"Enter number\n";
 cin>>num;
 
+if(num<0)
+{
+  cout<<"invalid input"<<endl;
+  return -1;
+}
 
 cout<<"The factorial of "<<num<<" is "<<fact(num)<<"\n";
+return 0;
 
 }
 
